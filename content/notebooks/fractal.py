@@ -43,7 +43,7 @@ class Fern:
     transform = self.next_transform.rvs()
     return np.dot(self.A[transform],last_point) + self.b[transform]
 
-  def plot(self, iterations=1000):
+  def plot(self):
     current = np.array([0.0, 0.0])
 
     fig = plt.figure()
@@ -58,7 +58,7 @@ class Fern:
     xs, ys = [], []
     line_fern, = ax.plot(xs, ys, 'go', markersize=1)
 
-    for x in range(iterations):
+    for x in range(60000):
       current = self.next_point(current)
       xs.append(current[0])
       ys.append(current[1])
@@ -854,110 +854,4 @@ class Hilbert:
     plt.axis('equal')
     plt.axis('off')
 
-    plt.show()
-
-# Lorentz Attactor
-class Lorentz:
-  def __init__(self, ntrajectories):
-    self.ntrajectories = ntrajectories
-  
-  def lorentz_deriv(self, x_y_z, t0, sigma=10., beta=8./3, rho=28.0):
-    """Compute the time-derivative of a Lorentz system."""
-    (x, y, z) = x_y_z
-    return [sigma * (y - x), x * (rho - z) - y, x * y - beta * z]
-
-  def plot(self):
-    # Choose random starting points, uniformly distributed from -15 to 15
-    np.random.seed(1)
-    x0 = -15 + 30 * np.random.random((self.ntrajectories, 3))
-
-    # Solve for the trajectories
-    t = np.linspace(0, 4, 1000)
-    x_t = np.asarray([integrate.odeint(self.lorentz_deriv, x0i, t)
-                      for x0i in x0])
-
-    # Set up figure & 3D axis for animation
-    fig = plt.figure()
-    ax = fig.add_axes([0, 0, 1, 1], projection='3d')
-    ax.axis('off')
-
-    # choose a different color for each trajectory
-    colors = plt.cm.jet(np.linspace(0, 1, self.ntrajectories))
-
-    # set up lines and points
-    lines = sum([ax.plot([], [], [], '-', c=c)
-                for c in colors], [])
-    pts = sum([ax.plot([], [], [], 'o', c=c)
-              for c in colors], [])
-
-    # prepare the axes limits
-    ax.set_xlim((-25, 25))
-    ax.set_ylim((-35, 35))
-    ax.set_zlim((5, 55))
-
-    # set point-of-view: specified by (altitude degrees, azimuth degrees)
-    ax.view_init(30, 0)
-
-    # initialization function: plot the background of each frame
-    def init():
-        for line, pt in zip(lines, pts):
-            line.set_data([], [])
-            line.set_3d_properties([])
-
-            pt.set_data([], [])
-            pt.set_3d_properties([])
-        return lines + pts
-
-    # animation function.  This will be called sequentially with the frame number
-    def animate(i):
-        # we'll step two time-steps per frame.  This leads to nice results.
-        i = (2 * i) % x_t.shape[1]
-
-        for line, pt, xi in zip(lines, pts, x_t):
-            x, y, z = xi[:i].T
-            line.set_data(x, y)
-            line.set_3d_properties(z)
-
-            pt.set_data(x[-1:], y[-1:])
-            pt.set_3d_properties(z[-1:])
-
-        ax.view_init(30, 0.3 * i)
-        fig.canvas.draw()
-        return lines + pts
-
-    # instantiate the animator.
-    anim = animation.FuncAnimation(fig, animate, init_func=init,
-                                  frames=500, interval=30, blit=True)
-
-    # Save as mp4. This requires mplayer or ffmpeg to be installed
-    anim.save('lorentz_attractor.mp4', fps=15, extra_args=['-vcodec', 'libx264'])
-
-    plt.show()
-
-# Julia Set
-class Julia:
-  def py_julia_fractal(self, z_re, z_im, j):
-    '''Crea el grafico del fractal de Julia.'''
-    for m in range(len(z_re)):
-        for n in range(len(z_im)):
-            z = z_re[m] + 1j * z_im[n]
-            for t in range(256):
-                z = z ** 2 - 0.05 + 0.68j
-                if np.abs(z) > 2.0:
-                    j[m, n] = t
-                    break
-  
-  def plot(self):
-    jit_julia_fractal = numba.jit(nopython=True)(self.py_julia_fractal)
-
-    N = 1024
-    j = np.zeros((N, N), np.int64)
-    z_real = np.linspace(-1.5, 1.5, N)
-    z_imag = np.linspace(-1.5, 1.5, N)
-    jit_julia_fractal(z_real, z_imag, j)
-
-    fig, ax = plt.subplots(figsize=(8, 8))
-    ax.imshow(j, cmap=plt.cm.RdBu_r, extent=[-1.5, 1.5, -1.5, 1.5])
-    ax.set_xlabel("$\mathrm{Re}(z)$", fontsize=18)
-    ax.set_ylabel("$\mathrm{Im}(z)$", fontsize=18)
     plt.show()
