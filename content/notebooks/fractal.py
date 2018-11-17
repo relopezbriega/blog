@@ -961,3 +961,41 @@ class Julia:
     ax.set_xlabel("$\mathrm{Re}(z)$", fontsize=18)
     ax.set_ylabel("$\mathrm{Im}(z)$", fontsize=18)
     plt.show()
+
+def mandelbrot( h,w, maxit=40): 
+  '''
+  Returns an image of the Mandelbrot fractal of size (h,w).
+  '''
+  y,x = np.ogrid[ -1.4:1.4:h*1j, -2:0.8:w*1j ]
+  #y,x = ogrid[ -0.25:0.25:h*1j, -1.8:-1.3:w*1j ]
+  #y,x = ogrid[ -0.05:0.05:h*1j, -1.5:-1.4:w*1j ]
+  c = x+y*1j
+  z = c
+  divtime = maxit + np.zeros(z.shape, dtype=int)
+  for i in range(maxit):
+    z  = z**2 + c
+    diverge = z*np.conj(z) > 2**2            # who is diverging
+    div_now = diverge & (divtime==maxit)  # who is diverging now
+    divtime[div_now] = i  +100                # note when
+    z[diverge] = 2                        # avoid diverging too much
+
+  return divtime
+    
+def mandelbrot2( h,w,a=-2.,b=.8,c=-1.4,d=1.4, maxit=40): 
+  '''
+  Returns an image of the Mandelbrot fractal of size (h,w).
+  '''
+  y,x = np.ogrid[ c:d:h*1j, a:b:w*1j ]
+  # y,x = ogrid[ -0.25:0.25:h*1j, -1.8:-1.3:w*1j ]
+  #y,x = ogrid[ -0.05:0.05:h*1j, -1.5:-1.4:w*1j ]
+  c = x+y*1j
+  z = c
+  divtime = maxit + np.zeros(z.shape, dtype=int)
+  for i in range(maxit):
+    z  = z**2 + c
+    diverge = z*np.conj(z) > 2**2            # who is diverging
+    div_now = diverge & (divtime==maxit)  # who is diverging now
+    divtime[div_now] = i  +100                # note when
+    z[diverge] = 2                        # avoid diverging too much
+
+  return divtime
