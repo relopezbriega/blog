@@ -4,5 +4,6 @@ Category: Programacion
 Tags: python, regex, programacion, analisis de datos
 Author: Raul E. Lopez Briega
 Description: Regex con python. Qué son las expresiones regulares, componentes, Regex útiles
+NotebookName: RegexPython.ipynb
 
 {% notebook RegexPython.ipynb cells[2:] %}

@@ -4,6 +4,6 @@ Category: IA
 Tags: python, estadistica, probabilidad, Inteligencia Artificial, TensorFlow, Redes Neuronales 
 Author: Raul E. Lopez Briega
 Description: Introducción a la Inteligencia Artificial. ¿Qué es la IA?. Objetivos. Enfoques. Fundamentos de la Inteligencia Artificial. Ramas de la Inteligencia Artificial. Aplicaciones. Nociones éticas. Cómo comenzar en el campo de la Inteligencia Artificial
-
+NotebookName: IA.ipynb
 
 {% notebook IA.ipynb cells[2:] %}

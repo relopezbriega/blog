@@ -9,6 +9,12 @@
 <div>
   <article class="hentry" role="article">
     {% include '_includes/article.html' %}
+    {% if article.notebookname %}
+    <div class="admonition note alert alert-info">
+    Este articulo fue escrito utilizando <a class="reference external" href="https://github.com/relopezbriega/blog/tree/master/content/notebooks/{{article.notebookname}}">Jupyter notebook</a>.
+    Presionar aquí para la versión interactiva:
+    <span class="raw-html"><a href="https://mybinder.org/v2/gh/relopezbriega/blog/master?filepath=content/notebooks/{{article.notebookname}}"><img alt="Binder badge" src="https://mybinder.org/badge.svg" style="vertical-align:text-bottom"></a></span></div>
+    {% endif %}
     <footer>
       {% include '_includes/article_infos.html' %}
       {% include '_includes/sharing.html' %}

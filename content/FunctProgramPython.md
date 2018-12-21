@@ -4,5 +4,6 @@ Category: Programacion
 Tags: python, funcional, programacion, analisis de datos
 Author: Raul E. Lopez Briega
 Description: Programación funcional con python. Paradigmas de programación, por qué programación funcional, map, reduce, filter, zip, ejemplos en python
+NotebookName: FunctProgramPython.ipynb
 
 {% notebook FunctProgramPython.ipynb cells[2:] %}

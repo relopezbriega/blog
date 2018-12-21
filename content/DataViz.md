@@ -4,6 +4,7 @@ Category: Analisis de datos
 Tags: python, programacion, analisis de datos, Machine Learning, matematica, probabilidad, estadistica, distribuciones, visualizaciones, bokeh, folium, seaborn, matplotlib
 Author: Raul E. Lopez Briega
 Description: Visualización de datos con python. Análisis de datos, cómo elegir la visualización adecuada, librerías de python, bokeh, folium, seaborn, matplotlib
+NotebookName: DataViz.ipynb
 
 {% notebook DataViz.ipynb cells[2:] %}
 

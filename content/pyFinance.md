@@ -4,5 +4,6 @@ Category: Finanzas
 Tags: python, finanzas, programacion, analisis de datos
 Author: Raul E. Lopez Briega
 Description: Finanzas con python. Por qué python para las finanzas, principales librerías, valor futuro, valor presente, valor presente neto, tasa interna de retorno, información financiera con pandas
+NotebookName: pyFinance.ipynb
 
 {% notebook pyFinance.ipynb cells[2:] %}

@@ -4,5 +4,6 @@ Category: Matematica
 Tags: python, matematica, programacion, complejos
 Author: Raul E. Lopez Briega
 Description: Números complejos con Python. Qué es un número complejo, operaciones con números complejos, Diagrama de Argand, aplicaciones, ejemplos en python
+NotebookName: ComplexPy.ipynb
 
 {% notebook ComplexPy.ipynb cells[2:] %}

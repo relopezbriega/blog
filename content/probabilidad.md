@@ -4,5 +4,6 @@ Category: Pobabilidad y Estadistica
 Tags: python, estadistica, programacion, analisis de datos, probabilidad, distribuciones
 Author: Raul E. Lopez Briega
 Description: Probabilidad con python. Teoría de probabilidad, espacio de muestreo, ley de grandes números, teorema del límite central y probabilidad condicional
+NotebookName: Probability_Py.ipynb
 
 {% notebook Probability_Py.ipynb cells[2:] %}

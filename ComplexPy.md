@@ -4,5 +4,6 @@ Author: Raul E. Lopez Briega
 Category: Matematica
 Tags: python, sistemas dinamicos, incertidumbre, matematica, caos, fractales
 Description: Complejidad, Caos y Fractales con Python. Introducción. ¿Qué es un sistema complejo?. ¿Qué es la teoría del caos?. El efecto mariposa. Ley potencial. El mapa logístico. El extraño atractor de Lorenz. Sistemas Adaptativos. Fractales y la geometría de la naturaleza. El juego del caos de Barnsly
+NotebookName: pyComplexity.ipynb
 
 {% notebook pyComplexity.ipynb cells[2:] %}

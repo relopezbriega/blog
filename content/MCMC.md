@@ -4,6 +4,6 @@ Category: Pobabilidad y Estadistica
 Tags: python, estadistica, programacion, analisis de datos, probabilidad, distribuciones, Monte-Carlo, MCMC, Metropolis
 Author: Raul E. Lopez Briega
 Description: Simulación de Monte-Carlo con Python. Números aleatorios, cadenas de Markov, algoritmo Metropolis-Hastings, métodos MCMC
-
+NotebookName: MCpy.ipynb
 
 {% notebook MCpy.ipynb cells[2:] %}

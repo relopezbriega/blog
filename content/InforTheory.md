@@ -4,6 +4,6 @@ Author: Raul E. Lopez Briega
 Category: Matematica
 Tags: informacion, incertidumbre, matematica, entropia, bit, redundancia, python, shannon
 Description: Introducción a la Teoría de la información con Python. ¿Qué es la información?. Bits. Entropia. Redundancia. Información e incertidumbre
-
+NotebookName: pyInformationTheory.ipynb
 
 {% notebook pyInformationTheory.ipynb cells[2:] %}

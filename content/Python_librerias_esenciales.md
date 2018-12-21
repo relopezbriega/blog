@@ -4,5 +4,6 @@ Category: Analisis de datos
 Tags: python, estadistica, analisis de datos
 Author: Raul E. Lopez Briega
 Description: Análisis de datos con Python. Principales librerías, numpy, matplotlib, jupyter notebook, pandas, scipy, scikit-learn
+NotebookName: Python-Librerias-esenciales.ipynb
 
 {% notebook Python-Librerias-esenciales.ipynb cells[2:] %}

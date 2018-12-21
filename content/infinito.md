@@ -4,5 +4,6 @@ Category: Matematica
 Tags: python, matematica, infinito
 Author: Raul E. Lopez Briega
 Description: Infinito con python. El concepto de infinito, el infinito en las matemáticas, notación, historia, teoría de conjuntos de Cantor, jerarquía de infinitos, hotel infinito, la paradoja de Zenon, límites e infinito, ejemplos en python
+NotebookName: pyInfinity.ipynb
 
 {% notebook pyInfinity.ipynb cells[2:] %}

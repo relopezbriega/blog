@@ -196,6 +196,23 @@ http://www.tipue.com/search
      }
 }
 
+/* custom */
+
+.middle * {
+     vertical-align: middle;
+ }
+ 
+ div.admonition {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
+ }
+ 
+ .alert-info {
+      border: 1px solid #0d47a1;
+      background-color: #e3f2fd;
+      color: #333;
+ }
 
 
 

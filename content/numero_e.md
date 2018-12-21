@@ -4,5 +4,6 @@ Category: Finanzas
 Tags: python, matematica, calculo, logaritmo, finanzas
 Author: Raul E. Lopez Briega
 Description: El número e. Qué es el número e, su historia, Euler, cómo calcularlo, su importancia en finanzas, ejemplo en python
+NotebookName: numbere.ipynb
 
 {% notebook numbere.ipynb cells[2:] %}

@@ -4,5 +4,6 @@ Category: Algebra
 Tags: python, matematica, calculo, algebra, ecuaciones diferenciales, matrices, vectores
 Author: Raul E. Lopez Briega
 Description: Algebra lineal con python. Campos, vectores, matrices, tensores, combinaciones lineales, matrices identidad, transpuesta e invertible, espacios vectoriales, independencia lineal, rango, norma, ortogonalidad, determinante, Eigenvalores y Eigenvectores
+NotebookName: pyLinearAlgrebra.ipynb
 
 {% notebook pyLinearAlgrebra.ipynb cells[2:] %}

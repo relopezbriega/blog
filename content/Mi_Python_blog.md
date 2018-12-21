@@ -4,5 +4,6 @@ Category: Programacion
 Tags: python
 Author: Raul E. Lopez Briega
 Description: Introducción a Python. Fortalezas del lenguaje, como instalarlo, por qué elegirlo
+NotebookName: Mi_Python_Blog.ipynb
 
 {% notebook Mi_Python_Blog.ipynb cells[1:] %}

@@ -4,5 +4,6 @@ Category: Matematica
 Tags: python, matematica, programacion, conjuntos
 Author: Raul E. Lopez Briega
 Description: Conjuntos en python. Qué es un conjunto, notación, algebra de conjuntos, subconjunto y conjunto potencia, ejemplos en python
+NotebookName: pythonSets.ipynb
 
 {% notebook pythonSets.ipynb cells[2:] %}

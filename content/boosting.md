@@ -4,5 +4,6 @@ Category: Machine Learning
 Tags: python, estadistica, probabilidad, Machine Learning, boosting, xgboost, adaboost, gradientboost, analisis de datos 
 Author: Raul E. Lopez Briega
 Description: Introducción al Bosting en Machine Learning. ¿Qué es Boosting?. AdaBoost. Gradient Boosting. Elementos del Gradient Boosting. Función de pérdida. Clasificador débil. Modelo aditivo. Ejemplos en Python. XGBoost. LightGBM
+NotebookName: boosting.ipynb
 
 {% notebook boosting.ipynb cells[2:] %}

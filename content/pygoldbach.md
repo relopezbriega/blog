@@ -4,5 +4,6 @@ Category: Matematica
 Tags: python, matematica, programacion
 Author: Raul E. Lopez Briega
 Description: Conjetura de Goldbach. Números primos, algoritmos en python
+NotebookName: pygoldbach.ipynb
 
 {% notebook pygoldbach.ipynb cells[2:] %}

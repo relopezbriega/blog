@@ -4,5 +4,6 @@ Category: Calculo
 Tags: python, matematica, calculo, derivada, integral, ecuaciones diferenciales, derivadas parciales
 Author: Raul E. Lopez Briega
 Description: Derivadas parciales con Python. Qué es una ecuación en derivadas parciales, clasificación, cómo resolverlas, condiciones inicial y de frontera, ejemplos en python
+NotebookName: pyPDE.ipynb
 
 {% notebook pyPDE.ipynb cells[2:] %}

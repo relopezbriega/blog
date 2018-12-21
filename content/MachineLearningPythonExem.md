@@ -4,5 +4,6 @@ Category: Machine Learning
 Tags: python, estadistica, programacion, matematica, analisis de datos, Machine Learning
 Author: Raul E. Lopez Briega
 Description: Preprocesamiento y exploración de datos con python. Limpieza de datos, análisis exploratorios, ejemplo práctico en python
+NotebookName: MachineLearningPractica.ipynb
 
 {% notebook MachineLearningPractica.ipynb cells[2:] %}
