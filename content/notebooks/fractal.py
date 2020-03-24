@@ -75,7 +75,7 @@ class Sierpinski:
     if iterations == 0:
       # Fill the triangle with vertices a, b, c. 
       plt.fill([a[0], b[0], c[0]], [a[1], b[1], c[1]], 'g') 
-      plt.hold(True)
+      #plt.hold(True)
     else:
       # Recursive calls for the three subtriangles. 
       self.SierpinskiTriangle(a, (a + b) / 2., (a + c) / 2., iterations - 1) 
@@ -179,7 +179,7 @@ class Vicsek:
       cb[1]+offset[1],cbd[1]+offset[1],cd[1]+offset[1],dc[1]+offset[1],
       dac[1]+offset[1],da[1]+offset[1],ad[1]+offset[1],abd[1]+offset[1]],
         'saddlebrown')
-      plt.hold(True)
+      #plt.hold(True)
     else:
       abd_m =np.array([0,0])
       bac_m = bac - abd
