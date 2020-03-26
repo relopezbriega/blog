@@ -4,7 +4,7 @@ Author: Raul E. Lopez Briega
 Summary: Acerca de mi.
 
 
-![yo](http://1.gravatar.com/avatar/9313eb8f6a2506d3599a2468b23bfbbe?s=100&d=wavatar&r=G)
+<img alt="Raúl e López Briega" title="Yo" src="https://relopezbriega.github.io/images/raulo.jpg" width="60%" height="60%">
 
 ***Yo vivo…***
 
@@ -27,6 +27,8 @@ Mis pasiones son:
 * La *Tecnología*, esta es la pasión que me llevó a diseñar y comenzar este blog, me encanta estar al tanto de las últimas corrientes tecnologicas.
 * La *Literatura*, me gusta mucho leer, leo de todo y variado, con una leve predileccion por las novelas de ciencia ficcion; mis novelas favoritas son: [1984, de George Orwell](http://es.wikipedia.org/wiki/1984_(novela)/) y [La rebelion de Atlas, de Ayn Rand](http://es.wikipedia.org/wiki/La_rebeli%C3%B3n_de_Atlas).
 * El *[Ajedrez](http://relopezbriega.com.ar/juegos/ajedrez/)*, el juego que me enseño mi padre a los 6 años, lo he jugado desde entonces y se convirtió en el juego más apasionante que jamás haya jugado.
+* El *Buceo*, que mi hizo conocer lugares increibles.
+* El *Trail Running*, no hay experiencia más enriquecedora que correr por los hermosos paisajes de cerros y montañas.
 * *[River Plate](http://www.cariverplate.com/)*, el club de futbol de mis amores, el más grande de la Argentina!!
 
 ***Mi Mision…***
