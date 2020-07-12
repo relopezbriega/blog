@@ -1,5 +1,5 @@
 Title: Sistemas dinámicos, Complejidad y Caos con Python
-Date: 2020-03-25
+Date: 2020-03-26
 Author: Raul E. Lopez Briega
 Category: Matematica
 Tags: python, sistemas dinamicos, incertidumbre, matematica, caos, fractales
